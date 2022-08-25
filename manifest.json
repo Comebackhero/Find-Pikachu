@@ -4,12 +4,20 @@
   "descriptions": "You want to be the very best? Find that Pikachu!",
   "version": "1.0",
   "icons": {
-
+    "16": "/img/pokeball_1_16x16.png",
+    "48": "/img/pokeball_2_48x48.png",
+    "128": "/img/pokeball_3_128x128.png"
   },
   "page_action": {
     "dafault_icon": {
-      "16":
-      "" 
+      "16": "/img/pokeball_1_16x16.png",
+      "48": "/img/pokeball_2_48x48.png",
+      "128": "/img/pokeball_3_128x128.png"
     }
-  }
+  },
+  "content_scripts": [{
+    "matches": ["https://www.google.com/"], 
+    "css": ["main.css"]
+  }]
 }
+//put a pikachu picture
