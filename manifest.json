@@ -1,0 +1,15 @@
+{
+  "manifest_version": 2,
+  "name": "Find that Pikachu",
+  "descriptions": "You want to be the very best? Find that Pikachu!",
+  "version": "1.0",
+  "icons": {
+
+  },
+  "page_action": {
+    "dafault_icon": {
+      "16":
+      "" 
+    }
+  }
+}
