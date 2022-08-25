@@ -1,7 +1,7 @@
 {
-  "manifest_version": 2,
+  "manifest_version": 3,
   "name": "Find that Pikachu",
-  "descriptions": "You want to be the very best? Find that Pikachu!",
+  "description": "You want to be the very best? Find that Pikachu!",
   "version": "1.0",
   "icons": {
     "16": "/img/pokeball_1_16x16.png",
@@ -15,9 +15,13 @@
       "128": "/img/pokeball_3_128x128.png"
     }
   },
-  "content_scripts": [{
-    "matches": ["https://www.google.com/"], 
-    "css": ["main.css"]
-  }]
+  "permissions": ["scripting"],
+
+  "content_scripts": [
+    {
+    "matches": ["https://*/*"], 
+    "css": ["main.css"],
+    "js": ["main.js"] 
+    }
+  ]
 }
-//put a pikachu picture
